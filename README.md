@@ -1,38 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## yarn add -D prettier
 
-## Getting Started
+## yarn add -D lint-staged husky
 
-First, run the development server:
+## yarn husky install
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## yarn husky add .husky/pre-commit "yarn lint-staged --no-stash"
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- /husky에 pre-commit 설정이 추가됨 commit을 만들어보자
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### lint-staged
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- git staged 상태의 파일들만 타겟으로 뭔가 할 수 있게 해줌
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### husky
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- git hook 동작에 대한 정의를 .git 파일이 아닌 .husky 에서 관리하여 repository에서 공유가 가능하도록 함

@@ -6,7 +6,7 @@
 
 ## yarn husky add .husky/pre-commit "yarn lint-staged --no-stash"
 
-- /husky에 pre-commit 설정이 추가됨 commit을 만들어보자
+- /husky에 pre-commit 설정 추가
 
 ### lint-staged
 

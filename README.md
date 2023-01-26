@@ -8,6 +8,28 @@
 
 - /husky에 pre-commit 설정 추가
 
+## yarn add @notionhq/client
+
+## yarn add -D prisma
+
+## yarn add @prisma/client
+
+## yarn prisma init
+
+## yarn prisma generate
+
+## yarn add tailwindcss postcss autoprefixer
+
+## yarn tailwindcss init -p
+
+## yarn add @emotion/react @emotion/styled
+
+## yarn add react-image-gallery
+
+## yarn add -D @types/react-image-gallery
+
+## yarn add nuka-carousel
+
 ### lint-staged
 
 - git staged 상태의 파일들만 타겟으로 뭔가 할 수 있게 해줌
